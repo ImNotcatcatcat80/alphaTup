@@ -56,7 +56,7 @@ while(True):
         if(accelerometer.get_x() > 350):
             status = status_dict["send_y"]
         if(accelerometer.get_x() < -350):
-            status = status_dict["send_y"]
+            status = status_dict["send_n"]
     
     if(status == status_dict["send_n"]):
         display.show("N")
